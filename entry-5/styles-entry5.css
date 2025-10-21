@@ -1,132 +1,145 @@
-@font-face { 
-    font-family: BoldricRegular;
-    src: url("BoldricRegular-rv9qp.woff") format("woff");
+@font-face {
+    font-family: Barrio;
+    src: url("Barrio.woff") format("woff");
+
+    font-family: JosefinSans;
+    src: url(JosefinSans.woff) format("woff");
+   
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(178, 232, 240);
-    font-family: Arial, sans-serif;
-    position: relative;
-    min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.bowl-div {
-    position: fixed;
-    top: 80px;
-    right: 20px;
-    width: 400px;
-    height: 400px;
+html, body {
+  height: 100%;
+  background-color: #f0fff1;
 }
 
-.bowl-div img {
+.navbar {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-color: #1e5128; 
+    padding: 10px 0;
+    display: flex;
+    gap: 12px; 
+    align-items: center;
+    justify-content: center; 
 }
 
 
-.fish-div {
-    position: fixed;
-    bottom: 0px;
-    left: 20px;
-    width: 600px;
-    height: 500px;
-}
-
-.fish-div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-h1 {
-    font-family: "BoldricRegular";
-    font-weight: bold;
-    text-align:center; 
-    font-size: 200px;
-    margin: 40px 0 20px 0;
-    color: rgb(23, 12, 106);
-}
-
-h1:hover {
-    color: rgb(248, 255, 46); 
-}
-
-
-
-.link {
-    text-align: center;
-    margin-top: 20px;
-}
-
-a {
+.navbar a {
     display: inline-block;
-    font-family: "Westernia";
-    background-color: rgb(27, 42, 201);
-    padding: 20px;
-    border-radius: 30px;
-    margin: 0 10px;
-    color: white;
+    font-family: "Josefin Sans";
+    background-color: #ffffff; 
+    color: #1e5128; 
+    padding: 8px 20px;
+    border-radius: 999px; 
+    border: none;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-a:hover {   
-  cursor: wait;
-  transition: cursor 0.8s ease;
+.navbar a:hover {
+    background-color: #80be85;
+    color: #ffffff;
 }
 
-
-.link-1,
-.link-2 {
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-.link {
+h1{
+    color:#1e5128;
     text-align: center;
-    margin-top: 20px;
+    font-family: JosefinSans;
+    font-size: 60px;
+    position: relative;
+    top: 50px
 }
+
+p{
+    color:#1e5128;
+    text-align: center;
+    font-family: JosefinSans;
+    position: relative;
+  
+}
+
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 800px; 
+  margin: 40px auto 0 auto; 
+}
+
+.container div img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: auto;
+}
+
+.bread-top img {
+  top: 0;
+}
+
+
+.tomato img {
+  top:0
+}
+
+.cheese img {
+  top:0
+}
+
+.beef img {
+  top:0
+}
+
+.lettuce img {
+  top:0
+}
+
+.bread-bottom img {
+  top: 0
+}
+
+.container:hover .tomato img {
+  transform: translate(-50%, 100px);
+  transition: transform 0.3s ease;
+}
+
+.container:hover .cheese img {
+  transform: translate(-50%, 200px);
+  transition: transform 0.5s ease;
+}
+
+.container:hover .beef img {
+  transform: translate(-50%, 300px);
+  transition: transform 0.7s ease;
+}
+
+.container:hover .lettuce img {
+  transform: translate(-50%, 400px);
+  transition: transform 0.9s ease;
+}
+
+.container:hover .bread-bottom img {
+  transform: translate(-50%, 500px);
+  transition: transform 1.1s ease;
+}
+
 
 
 @media screen and (max-width: 1024px) {
-    body {
-        background-color: rgb(252, 164, 186);
-    }
-
+ 
     h1 {
         font-size: 80px;
         margin: 20px 0;
     }
 
-
-    .bowl-div {
-        display: none;
-    }
-
-
-    .fish-div {
-        position: relative;
-        width: 60%;
-        max-width: 300px;
-        height: auto;
-        margin: 40px auto 0 auto;
-    }
-
-    .fish-div img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .link {
-        flex-direction: column;
-        margin-top: 30px;
-    }
 
     a {
         display: block;

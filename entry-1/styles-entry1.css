@@ -1,11 +1,132 @@
+@font-face {
+    font-family: Barrio;
+    src: url("Barrio.woff") format("woff");
+
+    font-family: JosefinSans;
+    src: url(JosefinSans.woff) format("woff");
+   
+}
+
 h1{
-    color:rgb(113, 49, 28);
+    color:#1e5128;
     text-align: center;
+    font-family: Barrio;
+    font-size: 100px;
+    position: relative;
+    top: 100px;
+
 }
+
 h2{
-    color:rgb(168, 71, 47);
+    color:#1e5128;
     text-align: center;
+    font-family: JosefinSans;
+    font-weight: 50;
+    position: relative;
+    top: 100px;
 }
+
 body{
-    background-color: darksalmon;
+    background-color: rgb(255, 255, 255);
 }
+
+
+.cookie img{
+    display: block;
+    margin-left: auto;
+    height: 300px;
+    width: 430px;
+    position: relative;
+    top:420px;
+    
+}
+
+.pizza img{
+    display: block;
+    margin-left: auto;
+    height: 180px;
+    width: 180px;
+    position: relative;
+    bottom: 50px;
+    left: -150px
+}
+
+.pizza:hover {
+  filter: blur(4px); 
+  transition: filter 0.3s ease; 
+}
+
+
+.gimbap img{
+    display: block;
+    margin-left: auto;
+    height: 180px;
+    width: 180px;
+    position: relative;
+    bottom: 340px;
+    left: -50px
+}
+
+.gimbap:hover {
+  filter: blur(4px); 
+  transition: filter 0.3s ease; 
+}
+
+
+.egg img{
+    display: block;
+    margin-left: auto;
+    height: 180px;
+    width: 180px;
+    position: relative;
+    bottom: 700px;
+    left: -50px
+}
+
+.egg:hover {
+  filter: blur(4px); 
+  transition: filter 0.3s ease; 
+}
+
+
+.hotdog img{
+    display: block;
+    margin-left: auto;
+    height: 180px;
+    width: 180px;
+    position: relative;
+    bottom: 1050px;
+    left: -50px
+}
+
+.hotdog:hover {
+  filter: blur(4px); 
+  transition: filter 0.3s ease; 
+}
+
+
+.chicken img{
+    display: none;
+    margin-left: auto;
+    height: 170px;
+    width: 180px;
+    position: relative;
+    bottom: 1400px;
+    left: -90px
+}
+
+.container {
+    position: relative;
+    top: 80px; 
+}
+
+.everything {
+  transform: scale(0.8);
+  transform-origin: top right;
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  top: 140px;    
+  right: 0;
+}
+

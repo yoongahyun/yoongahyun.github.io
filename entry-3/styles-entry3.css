@@ -1,55 +1,98 @@
 @font-face {
-    font-family: Westernia;
-    src: url("Westernia.woff") format("woff");
+    font-family: JosefinSans;
+    src: url("JosefinSans.woff") format("woff");
    
 }
-h1{
-    color:rgb(113, 49, 28);
-    text-align: center;
-    font-family: "Westernia";
+.navbar {
+    width: 100%;
+    background-color: #1e5128; 
+    padding: 10px 0;
+    display: flex;
+    gap: 12px; 
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.navbar a {
+    display: inline-block;
+    font-family: "Josefin Sans";
+    background-color: #ffffff; 
+    color: #1e5128; 
+    padding: 8px 20px;
+    border-radius: 999px; 
+    border: none;
+    text-decoration: none;
+    font-size: 15px;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
-h2{
-    color:rgb(168, 71, 47);
-    text-align: center;
-    font-family: "Westernia";
-    font-weight: normal;
+
+.navbar a:hover {
+    background-color: #80be85;
+    color: #ffffff;
 }
-h3{
-    color:rgb(212, 94, 65);
+
+
+
+
+h1{
+    color:#1e5128;
     text-align: center;
-     font-family: "Westernia";
-    font-weight: lighter;
+    font-family: JosefinSans;
+    font-size: 60px;
+    position: relative;
+    top: 50px
+}
+
+h1:hover {
+     color:#e464aa;
 }
 
 p{
-    color:rgb(214, 89, 58);
+    color:#1e5128;
     text-align: center;
-}
-body{
-    background-color: rgb(255, 199, 181);
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.test{
-    background-color: aquamarine;
-    width: 100px;
-    height: 100px;
-
+    font-family: JosefinSans;
+    position: relative;
   
 }
 
+body {
+  background-color: white;
+}
+
+#container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
-a{
-    display:inline-block;
-    font-family: "Westernia";
-    background-color: rgb(255, 219, 203);
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid brown
+.letter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+
+.cell {
+  width: 30px;
+  height: 30px;
+}
+
+
+.c, .o, .k {
+  width: 120px;
+}
+
+
+.fill {
+  background-color: #1e5128;
+  transition: border-radius 0.3s linear;
+}
+
+.fill:hover {
+  border-radius: 20px;
 }
