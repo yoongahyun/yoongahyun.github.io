@@ -1,0 +1,161 @@
+  @font-face {
+    font-family: RocGrotesk-medium;
+    src: url("rocgrotesk-medium.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-regular;
+    src: url("rocgrotesk-regular.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-wide-black;
+    src: url("rocgrotesk-wide-black.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-wide-reg;
+    src: url("rocgrotesk-wide-reg.woff") format("woff");
+   
+}
+
+
+
+body,html {
+    background-color: #ff434a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+
+.title span {
+    display: block;    
+    line-height: 1;  
+    margin: 0; 
+     
+}
+
+h1 {
+    color:black;
+    font-family:RocGrotesk-wide-black;
+    text-align: left;
+    font-size: 115px;
+    padding-left: 5%;
+    position: relative;
+    top:-70px;
+    z-index: 0;
+     padding-top: 60px;
+  
+}
+
+h1.title {
+    line-height: 0.6;   
+}
+
+
+.tomatoSquash {
+    position: relative;
+    top: -440px;   
+    left: 120px;  
+    z-index: 10;  
+}
+
+.tomatoSquash img {
+    width: 220px;   
+    height: auto;
+}
+
+
+.illust {
+    position: relative;
+    left:200px;
+    top: -160px;  
+}
+
+
+.beaver img{
+    position: relative;
+    left: 650px;
+    top: -330px;
+    width: 400px; 
+    z-index: 5;
+}
+
+.tomatoOutline img{
+     position: relative;
+    left: 570px;
+    top: -800px;
+    width: 550px;
+    z-index: 1;
+  
+}
+
+.tomatoText1 {
+    position: relative;
+    left: 670px;
+    top: -880px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 18px;
+    transform-origin: bottom left;
+    transform: rotate(227deg)
+
+}
+
+.tomatoText2 {
+    position: relative;
+    left: 538px;
+    top: -1100px; 
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 18px;
+    transform-origin: top left;
+    transform: rotate(-75deg)
+
+}
+
+
+.tomatoText3 {
+    position: relative;
+    left: 1000px;
+    top: -1450px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 18px;
+    transform-origin: top left;
+    transform: rotate(20deg)
+
+}
+
+
+.tomatoText4 {
+    position: relative;
+    left: 1160px;
+    top: -1340px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 18px;
+    transform-origin: top left;
+    transform: rotate(95deg)
+
+
+}
+
+.tomatoText5 {
+    position: relative;
+    left: 1090px;
+    top: -1160px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 18px;
+    transform-origin: top left;
+    transform: rotate(137deg)
+
+}
+
+/*ask why moving tomato shifts illust and why tomato does like crop w pager*/
+
+
+

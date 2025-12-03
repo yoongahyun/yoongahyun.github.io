@@ -1,0 +1,155 @@
+@font-face {
+    font-family: RocGrotesk-medium;
+    src: url("rocgrotesk-medium.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-regular;
+    src: url("rocgrotesk-regular.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-wide-black;
+    src: url("rocgrotesk-wide-black.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-wide-reg;
+    src: url("rocgrotesk-wide-reg.woff") format("woff");
+   
+}
+
+
+body {
+    background-color: #ffffff;
+}
+
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 800px; 
+  margin: 40px auto 0 auto; 
+}
+
+.container div img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: auto;
+}
+
+.bread-top img {
+  top: 0;
+}
+
+
+.tomato img {
+  top:0
+}
+
+.cheese img {
+  top:0
+}
+
+.beef img {
+  top:0
+}
+
+.lettuce img {
+  top:0
+}
+
+.bread-bottom img {
+  top: 0
+}
+
+.container:hover .tomato img {
+  transform: translate(-50%, 100px);
+  transition: transform 0.3s ease;
+}
+
+.container:hover .cheese img {
+  transform: translate(-50%, 200px);
+  transition: transform 0.5s ease;
+}
+
+.container:hover .beef img {
+  transform: translate(-50%, 300px);
+  transition: transform 0.7s ease;
+}
+
+.container:hover .lettuce img {
+  transform: translate(-50%, 400px);
+  transition: transform 0.9s ease;
+}
+
+.container:hover .bread-bottom img {
+  transform: translate(-50%, 500px);
+  transition: transform 1.1s ease;
+}
+
+.title {
+    color: #e44343;
+    font-family: RocGrotesk-wide-black;
+    text-align: center;
+    font-size: 70px;
+    margin-top: -230px;   /* 🔥 moved up */
+    margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+.subtitle {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;     /* 🔥 removed big spacing */
+    margin-top: 100px;  /* 🔥 moved up */
+    text-align: center;
+    font-size: 18px;
+    color: #e44343;
+    font-family: RocGrotesk-regular;
+}
+
+hr{
+  color:#e44343
+}
+
+/* DIET TEXT */
+.diet p {
+    width: 75%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    color: #ffb5ae;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.diet span { 
+    display: block;
+    margin-bottom: 40px;
+}
+
+.arrowLeft,
+.arrowRight {
+    position: fixed;
+    bottom: 20px;
+    font-size: 40px;       
+    font-weight: 300;      
+    color: black;
+    text-decoration: none;
+    font-family: RocGrotesk-wide-reg;
+    z-index: 9999;
+}
+
+
+.arrowLeft {
+    left: 20px;
+}
+
+
+.arrowRight {
+    right: 20px;
+}
+

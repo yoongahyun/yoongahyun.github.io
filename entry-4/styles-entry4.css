@@ -1,56 +1,179 @@
 @font-face {
-    font-family: JosefinSans;
-    src: url("JosefinSans.woff") format("woff");
+    font-family: RocGrotesk-medium;
+    src: url("rocgrotesk-medium.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-regular;
+    src: url("rocgrotesk-regular.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-wide-black;
+    src: url("rocgrotesk-wide-black.woff") format("woff");
+   
+}
+  @font-face {
+    font-family: RocGrotesk-wide-reg;
+    src: url("rocgrotesk-wide-reg.woff") format("woff");
    
 }
 
-.navbar {
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
     width: 100%;
-    background-color: #1e5128; 
-    padding: 10px 0;
-    display: flex;
-    gap: 12px; 
-    align-items: center;
-    justify-content: center; 
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 200px;
 }
 
 
-.navbar a {
-    display: inline-block;
-    font-family: "Josefin Sans";
-    background-color: #ffffff; 
-    color: #1e5128; 
-    padding: 8px 20px;
-    border-radius: 999px; 
-    border: none;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+.left-section h1 {
+    color: #000;
+    font-family: RocGrotesk-wide-black;
+    font-size: 120px;
+    margin: 40px 0 0 30px;
+    position: relative;
+    z-index: 5;
 }
 
-.navbar a:hover {
-    background-color: #80be85;
-    color: #ffffff;
+.image-layer {
+    position: relative;
+}
+
+.strawberryBig, 
+.strawberrySmall {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.strawberryBig {
+    position: absolute;
+    width: 750px;
+    top: -600px;
+    left: 650px;
+    transform: rotate(20deg);
+    z-index: 6;
+    animation-name: bigSwap;
+    
+}
+
+
+.strawberrySmall {
+    position: absolute;
+    width: 220px;
+    top: -140px;
+    left: 80px;
+    transform: rotate(-20deg);
+    filter: blur(5px);
+    z-index: 0; 
+    animation-name: smallSwap;
+}
+
+@keyframes bigSwap {
+    0% {
+        transform: rotate(20deg) scale(1);
+        filter: blur(0);
+    }
+    100% {
+        transform: rotate(20deg) scale(0.3);
+        filter: blur(15px);
+    }
+}
+
+
+@keyframes smallSwap {
+    0% {
+        transform: rotate(-20deg) scale(1);
+        filter: blur(5px);
+    }
+    100% {
+        transform: rotate(-20deg) scale(3.4);
+        filter: blur(0);
+    }
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-family: RocGrotesk-medium;
+    font-size: 28px;
+    color: black;
+}
+
+.bigWord {
+    font-family: RocGrotesk-wide-black;
+    color: #E63946;
+}
+
+.bigWord:hover{
+    color:greenyellow
 }
 
 
 .text-box {
-    width: 33.33%;        
-    text-align: left;    
-    padding: 20px;       
+    width: 33%;
+    margin-top: 200px;
+    padding-left: 50px;
 }
 
-h1{
-    color:#1e5128;
-    font-family: JosefinSans;
-    font-size: 60px;
-
+.text-box h3 {
+    color: #000;
+    font-family: RocGrotesk-medium;
+    font-size: 24px;
 }
 
-p{
-    color:#1e5128;
-    font-family: JosefinSans;
-   
-  
+.text-box p {
+    color: #000;
+    font-family: RocGrotesk-regular;
+    font-size: 18px;
+    line-height: 1.5;
 }
+
+
+.sprout {
+    width: 180px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 20;
+}
+
+
+.arrowLeft,
+.arrowRight {
+    position: fixed;
+    bottom: 20px;
+    font-size: 40px;       
+    font-weight: 300;      
+    color: black;
+    text-decoration: none;
+    font-family: RocGrotesk-wide-reg;
+    z-index: 9999;
+}
+
+
+.arrowLeft {
+    left: 20px;
+}
+
+
+.arrowRight {
+    right: 20px;
+}
+

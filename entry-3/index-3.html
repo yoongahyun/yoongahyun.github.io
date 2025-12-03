@@ -9,60 +9,55 @@
 </head>
 
 <body>
- <div class="navbar">
-    <a href="../entry-1/index-1.html">Home</a>
-    <a href="../entry-2/index-2.html">Back</a>
-    <a href="../entry-4/index-4.html">Forward</a>
-    <a href="">TBA</a>
+
+
+<div class="page-container">
+
+    <div class="bubble top-bubble">
+        <img src="speech1.png" class="bubble-img">
+        <div class="bubble-text top-text">
+            Hi again. I forgot to introduce myself...<br>
+            <strong>My name is Nicholas and I will be your guide.</strong>
+        </div>
+    </div>
+
+    <div class="bubble bottom-bubble">
+        <img src="speech2.png" class="bubble-img">
+        <div class="bubble-text bottom-text">
+            This page is your <strong>FOOD LOG</strong><br>
+            Don’t know what to write?<br>
+            Well here’s what I ate…
+        </div>
+    </div>
+
+    <img class="nicholas" src="assets.png">
+
 </div>
-<div id="container">
-
- <div id="container">
-
-     <!-- Letter C  -->
-    <div class="letter c">
-      <div class="cell"></div><div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-      <div class="cell"></div><div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div>
-    </div>
-
-    <!-- Letter O -->
-    <div class="letter o">
-      <div class="cell"></div><div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell"></div><div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div>
-    </div>
-
-    <!-- Letter O -->
-    <div class="letter o">
-      <div class="cell"></div><div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell"></div><div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div>
-    </div>
-
-    <!-- Letter K -->
-    <div class="letter k">
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell fill"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell fill"></div><div class="cell"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell fill"></div><div class="cell"></div>
-      <div class="cell fill"></div><div class="cell"></div><div class="cell"></div><div class="cell fill"></div>
-    </div>
-
-  </div>
-</body>
   
+<div class="grid-page">
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div class="box" id="writeBox">
+          <input 
+            type="text" 
+            id="receipe" 
+            placeholder="What did you eat?" 
+            oninput="doSomething()">
+        </div>
+    </div>
+
+    <p class="small-note">now add your own...</p>
 </div>
 
-    <h1></h1>
-
-    <p1></p1>
+<a href="../entry-2/index-2.html" class="arrowLeft">←</a>
+<a href="../entry-4/index-4.html" class="arrowRight">→</a>
        
-
+<script src="script-1.js"></script>
+</body>
 </html>
