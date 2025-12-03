@@ -95,41 +95,44 @@ body {
     font-family: RocGrotesk-wide-black;
     text-align: center;
     font-size: 70px;
-    margin-top: -230px;   /* 🔥 moved up */
+    margin-top: -230px;  
     margin-bottom: 10px;
 }
 
-/* SUBTITLE */
+
 .subtitle {
     width: 70%;
     max-width: 800px;
-    margin: 0 auto;     /* 🔥 removed big spacing */
-    margin-top: 100px;  /* 🔥 moved up */
+    margin: 0 auto;    
+    margin-top: 100px;
     text-align: center;
     font-size: 18px;
     color: #e44343;
     font-family: RocGrotesk-regular;
 }
 
-hr{
-  color:#e44343
-}
-
-/* DIET TEXT */
 .diet p {
     width: 75%;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 100px auto;
     text-align: center;
     color: #ffb5ae;
     font-size: 18px;
     line-height: 1.8;
+    font-family: RocGrotesk-regular;
 }
 
 .diet span { 
     display: block;
     margin-bottom: 40px;
 }
+
+.carbs { color: #a67a5b; }
+.vitamins { color: #b61f1a; }
+.dairy { color: #ffc46a; }
+.protein { color: #9b3f15; }
+.fiber { color: #5da73a; }
+
 
 .arrowLeft,
 .arrowRight {

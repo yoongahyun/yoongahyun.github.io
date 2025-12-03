@@ -69,12 +69,43 @@ p {
     line-height: 1.4;
 }
 
-.text1 {
-    position: absolute;
-    right: 100px;   
-    top: 150px;    
-    z-index: 4;
+.Text1 {
+    position: relative;
+    left: 430px;
+    top: -430px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 15px;
+    transform-origin: top left;
+    transform: rotate(-60deg)
+
 }
+
+
+.Text2 {
+    position: relative;
+    left: 580px;
+    top: -620px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 15px;
+    transform-origin: top left;
+    transform: rotate(-15deg)
+
+}
+
+.Text3 {
+    position: relative;
+    left: 785px;
+    top: -695px;
+    color:black;
+    font-family:RocGrotesk-regular;
+    font-size: 15px;
+    transform-origin: top left;
+    transform: rotate(25deg)
+
+}
+
 
 .arrowLeft,
 .arrowRight {
@@ -97,5 +128,6 @@ p {
 .arrowRight {
     right: 20px;
 }
+
 
 
