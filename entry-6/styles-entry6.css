@@ -27,7 +27,7 @@ body {
 
 .container {
   position: relative;
-  width: 500px;
+  width: 300px;
   height: 800px; 
   margin: 40px auto 0 auto; 
 }
@@ -107,7 +107,7 @@ body {
     margin-top: 100px;
     text-align: center;
     font-size: 18px;
-    color: #e44343;
+    color: #dd5b55;
     font-family: RocGrotesk-regular;
 }
 
@@ -134,25 +134,27 @@ body {
 .fiber { color: #5da73a; }
 
 
+
 .arrowLeft,
 .arrowRight {
     position: fixed;
     bottom: 20px;
-    font-size: 40px;       
-    font-weight: 300;      
-    color: black;
-    text-decoration: none;
-    font-family: RocGrotesk-wide-reg;
     z-index: 9999;
 }
 
+.arrowLeft img,
+.arrowRight img {
+    width: 50px;      
+    height: auto;
+    display: block;
+}
 
 .arrowLeft {
     left: 20px;
 }
 
-
 .arrowRight {
     right: 20px;
 }
+
 

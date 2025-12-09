@@ -21,7 +21,7 @@
 
 
 body {
-    background-color: #ff434a;
+    background-color: #dd5b55;
 }
 
 
@@ -111,23 +111,30 @@ p {
 .arrowRight {
     position: fixed;
     bottom: 20px;
-    font-size: 40px;       
-    font-weight: 300;      
-    color: black;
-    text-decoration: none;
-    font-family: RocGrotesk-wide-reg;
     z-index: 9999;
 }
 
+.arrowLeft img,
+.arrowRight img {
+    width: 50px;      
+    height: auto;
+    display: block;
+}
 
 .arrowLeft {
     left: 20px;
 }
 
-
 .arrowRight {
     right: 20px;
 }
 
+.fadeWord {
+    opacity: 0;
+}
+
+.fadeWord.show {
+    opacity: 1;
+}
 
 

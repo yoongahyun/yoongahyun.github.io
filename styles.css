@@ -22,7 +22,7 @@
 
 
 body,html {
-    background-color: #ff434a;
+    background-color: #dd5b55;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -71,15 +71,15 @@ h1.title {
 .illust {
     position: relative;
     left:200px;
-    top: -160px;  
+    top: -60px;  
 }
 
 
 .beaver img{
     position: relative;
-    left: 650px;
-    top: -330px;
-    width: 400px; 
+    left: 760px;
+    top: -370px;
+    width: 150px; 
     z-index: 5;
 }
 
@@ -120,7 +120,7 @@ h1.title {
 .tomatoText3 {
     position: relative;
     left: 1000px;
-    top: -1450px;
+    top: -1430px;
     color:black;
     font-family:RocGrotesk-regular;
     font-size: 18px;
@@ -157,5 +157,10 @@ h1.title {
 
 /*ask why moving tomato shifts illust and why tomato does like crop w pager*/
 
+.fadeWord {
+    opacity: 0;
+}
 
-
+.fadeWord.show {
+    opacity: 1;
+}

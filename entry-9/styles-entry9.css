@@ -24,7 +24,7 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: #c4c3c4;
 }
 
 .container {
@@ -56,6 +56,7 @@ body, html {
     padding-left: 50px;
     position: relative;
     top: -150px;
+    z-index: 1;
 }
 
 
@@ -69,27 +70,43 @@ body, html {
 
 
 
+.conveyor {
+    position: relative;
+    width:600px;
+    transform: scale(1.6);
+    top: -540px;
+    left:580px;
+    z-index:0;
+}
+
+.conveyor img {
+    width: 600px;   
+    height: auto;
+}
+
+
+
+
 
 
 .arrowLeft,
 .arrowRight {
     position: fixed;
     bottom: 20px;
-    font-size: 40px;       
-    font-weight: 300;      
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: RocGrotesk-wide-reg;
     z-index: 9999;
 }
 
+.arrowLeft img,
+.arrowRight img {
+    width: 50px;      
+    height: auto;
+    display: block;
+}
 
 .arrowLeft {
     left: 20px;
 }
 
-
 .arrowRight {
     right: 20px;
 }
-

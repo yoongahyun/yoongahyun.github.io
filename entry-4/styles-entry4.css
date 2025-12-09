@@ -1,39 +1,55 @@
 @font-face {
     font-family: RocGrotesk-medium;
     src: url("rocgrotesk-medium.woff") format("woff");
-   
 }
-  @font-face {
+
+@font-face {
     font-family: RocGrotesk-regular;
     src: url("rocgrotesk-regular.woff") format("woff");
-   
 }
-  @font-face {
+
+@font-face {
     font-family: RocGrotesk-wide-black;
     src: url("rocgrotesk-wide-black.woff") format("woff");
-   
 }
-  @font-face {
+
+@font-face {
     font-family: RocGrotesk-wide-reg;
     src: url("rocgrotesk-wide-reg.woff") format("woff");
-   
 }
 
 
-body, html {
+
+
+
+html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    width: 100%;
+    overflow-x: hidden; 
+    background: #fff;
 }
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     position: relative;
-    padding-bottom: 200px;
+
+
+    min-height: 1800px;
+
+   
+    overflow: visible;
 }
 
+
+
+
+.left-section {
+    position: relative;
+    left: 80px;  
+}
 
 .left-section h1 {
     color: #000;
@@ -44,11 +60,14 @@ body, html {
     z-index: 5;
 }
 
+
+
+
 .image-layer {
     position: relative;
 }
 
-.strawberryBig, 
+.strawberryBig,
 .strawberrySmall {
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -58,15 +77,13 @@ body, html {
 
 .strawberryBig {
     position: absolute;
-    width: 750px;
+    width: 600px;
     top: -600px;
     left: 650px;
     transform: rotate(20deg);
-    z-index: 6;
+    z-index: 19;
     animation-name: bigSwap;
-    
 }
-
 
 .strawberrySmall {
     position: absolute;
@@ -75,37 +92,28 @@ body, html {
     left: 80px;
     transform: rotate(-20deg);
     filter: blur(5px);
-    z-index: 0; 
+    z-index: 1;
     animation-name: smallSwap;
 }
 
 @keyframes bigSwap {
-    0% {
-        transform: rotate(20deg) scale(1);
-        filter: blur(0);
-    }
-    100% {
-        transform: rotate(20deg) scale(0.3);
-        filter: blur(15px);
-    }
+    from { transform: rotate(20deg) scale(1); filter: blur(0); }
+    to   { transform: rotate(20deg) scale(0.3); filter: blur(15px); }
 }
-
 
 @keyframes smallSwap {
-    0% {
-        transform: rotate(-20deg) scale(1);
-        filter: blur(5px);
-    }
-    100% {
-        transform: rotate(-20deg) scale(3.4);
-        filter: blur(0);
-    }
+    from { transform: rotate(-20deg) scale(1); filter: blur(5px); }
+    to   { transform: rotate(-20deg) scale(2.3); filter: blur(0); }
 }
+
+
+
 
 .text {
     width: 100%;
     text-align: center;
     margin-top: 150px;
+    margin-right: 10px;
     position: relative;
     z-index: 10;
 }
@@ -114,66 +122,86 @@ body, html {
     font-family: RocGrotesk-medium;
     font-size: 28px;
     color: black;
+    transform: translateX(-50px);
 }
 
 .bigWord {
     font-family: RocGrotesk-wide-black;
-    color: #E63946;
+    color: #dd5b55;
 }
 
-.bigWord:hover{
-    color:greenyellow
+.bigWord:hover {
+    color: greenyellow;
 }
-
 
 .text-box {
     width: 33%;
-    margin-top: 200px;
+    margin-top: 340px;
     padding-left: 50px;
+    position: relative;
+    z-index: 20;
 }
 
 .text-box h3 {
-    color: #000;
+    color: #ffffff;
     font-family: RocGrotesk-medium;
     font-size: 24px;
+    z-index: 20;
 }
 
 .text-box p {
-    color: #000;
+    color: #ffffff;
     font-family: RocGrotesk-regular;
     font-size: 18px;
     line-height: 1.5;
+    z-index: 20;
+    margin-top: 20px;
 }
+
+
+
+.note {
+    position: absolute;
+    width: 100vw;     
+    left: 50%;
+    transform: translateX(-50%);
+    top: 730px;
+    z-index: 0;
+    object-fit: cover;
+}
+
 
 
 .sprout {
-    width: 180px;
+    top: 1150px;
+    width: 250px;
     position: absolute;
-    right: 40px;
-    bottom: 40px;
+    right: 300px;
     z-index: 20;
 }
+
+
+
 
 
 .arrowLeft,
 .arrowRight {
     position: fixed;
     bottom: 20px;
-    font-size: 40px;       
-    font-weight: 300;      
-    color: black;
-    text-decoration: none;
-    font-family: RocGrotesk-wide-reg;
     z-index: 9999;
 }
 
+.arrowLeft img,
+.arrowRight img {
+    width: 50px;      
+    height: auto;
+    display: block;
+}
 
 .arrowLeft {
     left: 20px;
 }
 
-
 .arrowRight {
     right: 20px;
 }
-

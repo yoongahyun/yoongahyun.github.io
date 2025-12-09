@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: #ff434a;
+    background-color: #dd5b55;
 }
 
 
@@ -104,16 +104,19 @@ p {
     }
 }
 
+
 .arrowLeft,
 .arrowRight {
     position: fixed;
-    top: 20px;     
-    font-size: 40px;       
-    font-weight: 300;      
-    color: black;
-    text-decoration: none;
-    font-family: RocGrotesk-wide-reg;
+    bottom: 20px;
     z-index: 9999;
+}
+
+.arrowLeft img,
+.arrowRight img {
+    width: 50px;      
+    height: auto;
+    display: block;
 }
 
 .arrowLeft {
@@ -123,7 +126,5 @@ p {
 .arrowRight {
     right: 20px;
 }
-
-
 
 
