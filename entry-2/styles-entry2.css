@@ -22,6 +22,8 @@
 
 body {
     background-color: #dd5b55;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
