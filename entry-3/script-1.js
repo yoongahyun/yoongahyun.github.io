@@ -6,6 +6,10 @@ function doSomething() {
     myElem.innerHTML = text;
 }
 
+
+
+
+//:typewriter effect credit on slideshow://
 function typeWriter(element, speed = 35) {
     return new Promise(resolve => {
         const html = element.innerHTML.trim();
