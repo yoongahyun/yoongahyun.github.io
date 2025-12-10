@@ -139,4 +139,87 @@ p {
     opacity: 1;
 }
 
+@media (min-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 
+    .plate img {
+        width: 900px;
+        top: 100px;
+    }
+
+    .fork img {
+        left: 100px;
+        top: 140px;
+        width: 500px;
+    }
+
+    .spoon img {
+        right: 100px;
+        top: 150px;
+        width: 500px;
+    }
+
+    .text-box {
+        width: 380px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Text1 {
+        left: 430px;
+        top: -430px;
+        transform: rotate(-60deg);
+    }
+
+    .Text2 {
+        left: 580px;
+        top: -620px;
+        transform: rotate(-15deg);
+    }
+
+    .Text3 {
+        left: 785px;
+        top: -695px;
+        transform: rotate(25deg);
+    }
+}
+
+
+@media (max-width: 1023px) {
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .plate img {
+        width: 70%;
+        top: 60px;
+    }
+
+    .fork img,
+    .spoon img {
+        width: 35%;
+        top: 120px;
+    }
+
+    .text-box {
+        width: 70%;
+    }
+
+    .Text1,
+    .Text2,
+    .Text3 {
+        position: absolute;
+        transform-origin: center;
+        transform: rotate(0deg);
+        font-size: 12px;
+    }
+
+    .Text1 { top: 65%; left: 20%; }
+    .Text2 { top: 70%; left: 45%; }
+    .Text3 { top: 75%; left: 70%; }
+}
