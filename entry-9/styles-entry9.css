@@ -85,10 +85,6 @@ body, html {
 }
 
 
-
-
-
-
 .arrowLeft,
 .arrowRight {
     position: fixed;
@@ -110,3 +106,4 @@ body, html {
 .arrowRight {
     right: 20px;
 }
+
