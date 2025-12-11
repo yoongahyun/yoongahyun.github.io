@@ -27,4 +27,3 @@ document.getElementById("button").addEventListener("click", function ()
     document.querySelector("p").style.display = "none";
     randomDinner();
 });
-//*I asked ai for this one!*//
